@@ -7,8 +7,13 @@ variants (companion radio BLE/USB, repeater, room server, kiss modem).
 
 ## Wiring
 
-Connect the OLED module's 4 wires to the Qwiic/I2C connector (or the equivalent
-header pins):
+No soldering required if your OLED module has a Qwiic/STEMMA QT connector
+(4-pin JST-SH plug) — just plug a Qwiic/STEMMA QT cable straight into the
+Ikoka Nano's I2C port.
+
+If your module only has bare pin headers, connect its 4 pins to the Ikoka
+Nano's I2C port (soldered wires, or jumper cables if the pins line up with a
+socket):
 
 | OLED pin | Ikoka Nano |
 |----------|------------|

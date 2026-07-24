@@ -20,7 +20,13 @@ ikoka_nano_ssd1306/
 
 ### 1. Wire up the OLED
 
-Connect the SSD1306 module's 4 wires to the Ikoka Nano's Qwiic/I2C connector:
+No soldering required if your OLED module already has a **Qwiic/STEMMA QT
+connector** (the small 4-pin JST-SH plug) — just plug a Qwiic/STEMMA QT cable
+straight from the module into the Ikoka Nano's I2C port and skip to step 2.
+
+If your module only has bare pin headers instead, connect its 4 pins to the
+Ikoka Nano's I2C port (soldering wires, or a female-to-female jumper cable if
+the pins line up with a socket):
 
 | OLED pin | Ikoka Nano  |
 |----------|-------------|

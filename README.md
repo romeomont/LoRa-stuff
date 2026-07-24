@@ -158,6 +158,7 @@ RAK4631 and Ikoka Handheld boards. See
 
 This repo is MIT-licensed, matching [MeshCore's license](LICENSE), since the
 changed files here are a derivative of MeshCore's own MIT-licensed source.
-The pre-built firmware also links in a few third-party libraries (Adafruit
-SSD1306/GFX/BusIO, base64) — see [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md)
-for their license texts.
+See [`NOTICE.md`](NOTICE.md) for how that ties together, and
+[`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md) for the license texts of
+the third-party libraries (Adafruit SSD1306/GFX/BusIO, base64) linked into
+the pre-built firmware.

@@ -127,3 +127,11 @@ defaulted to no display at all) and wires it to the I2C bus already used by
 the onboard sensor/RTC — the same pattern MeshCore already uses for the
 RAK4631 and Ikoka Handheld boards. See
 [`SSD1306_DISPLAY.md`](ikoka_nano_ssd1306/SSD1306_DISPLAY.md) for more detail.
+
+### License
+
+This repo is MIT-licensed, matching [MeshCore's license](LICENSE), since the
+changed files here are a derivative of MeshCore's own MIT-licensed source.
+The pre-built firmware also links in a few third-party libraries (Adafruit
+SSD1306/GFX/BusIO, base64) — see [`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md)
+for their license texts.

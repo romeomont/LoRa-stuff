@@ -52,6 +52,24 @@ won't damage anything.
 
 ### 3. Flash it
 
+#### Option A: meshcore.io web flasher (easiest)
+
+Since this is custom firmware (not an official MeshCore release), the normal
+device dropdown on the flasher won't have it listed — but the flasher has a
+**custom firmware upload** button that takes a `.zip` or `.bin` file directly.
+
+1. Put the board into bootloader/DFU mode: press the reset button once. If
+   the board doesn't show up as a new serial port, quickly double-click
+   reset instead, or unplug/replug the USB cable.
+2. Go to <https://flasher.meshcore.io> in Chrome.
+3. Use the custom firmware upload option and select the matching `.zip` from
+   [`prebuilt_firmware/`](ikoka_nano_ssd1306/prebuilt_firmware) (pick the
+   `_usb` build for this method).
+4. Select the board's serial port when prompted and confirm — the flasher
+   handles the rest.
+
+#### Option B: adafruit-nrfutil (command line)
+
 The Ikoka Nano is an nRF52840 board, flashed the same way as RAK4631/Heltec
 T114:
 
@@ -118,7 +136,9 @@ extension**:
    Port` if it picks the wrong one.
 
 The built firmware also lands at `.pio\build\<env-name>\firmware.zip` inside
-the MeshCore folder, in case you want it for reference or to share.
+the MeshCore folder — you can flash that the same way as Option A/B above
+instead of using PlatformIO's own Upload button, if you'd rather use the web
+flasher.
 
 ### What actually changed
 
